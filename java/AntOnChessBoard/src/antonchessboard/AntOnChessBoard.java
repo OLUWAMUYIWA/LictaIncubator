@@ -20,6 +20,7 @@ public class AntOnChessBoard {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Oluwamuyiwa");
+        int Scam[][] = new int[5][5];
     }
     
 }
