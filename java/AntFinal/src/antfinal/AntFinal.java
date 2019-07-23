@@ -29,41 +29,43 @@ public class AntFinal {
            System.out.println("x, y = " + x + "," + y );
        
        else{
-       while( number != second)
+           
+           major :{   while( number != second)
        {
            
-               //firstUp
+           firstUp :
            {     y++;
                 second ++;
                 ly=y;
                 if (number == second)
                 {
                     System.out.println("x, y = " + x + "," + y );
-                    break;
+                    break major;
                 }
            }    
            
            
-               //firstRight
-               for ( ; x<(lx +1);)
+           firstRight :
+               for ( ; x<(lx +1); x++, second++)
                {
-                    x++;
-                    second++;
+                   
+
                    
                    if (second == number)
                 {
                     System.out.println("x, y = " + x + "," + y );
-                    break;
+                    break major;
                 }
                    
                }
                if (second == number)
                 {
-                    break;
+                    break major;
                 }
            
            
-               //down
+               down :
+               {
                ly = y;
                for(; y >1; )
                {
@@ -72,28 +74,30 @@ public class AntFinal {
                  if (second == number)
                 {
                     System.out.println("x, y = " + x + "," + y );
-                    break;
+                    break major;
                 }  
                }
-               /*if (second == number)
+               if (second == number)
                 {
                     System.out.println("x, y = " + x + "," + y );
-                    break;
+                    break major;
                 }
+               }
            
-           */
-               //secondRight
+               secondRight :
+               {
                lx = x;
                x++;
                second ++;
                if (second == number)
                 {
                     System.out.println("x, y = " + x + "," + y );
-                    break;
+                    break major;
                 }
+               }
            
-           
-               //secondUp
+               secondUp :
+               {
                for (; y<(ly+1);)
                {
                    y++;
@@ -101,17 +105,18 @@ public class AntFinal {
                    if (second == number)
                 {
                     System.out.println("x, y = " + x + "," + y );
-                    break;
+                    break major;
                 }
                }
                if (second == number)
                 {
-                    break;
+                    break major;
                 }
                
+               }
            
-           
-               //left
+               left :
+               {
                for(; x>1;)
                {
                    x--;
@@ -119,14 +124,16 @@ public class AntFinal {
                    if (second == number)
                 {
                     System.out.println("x, y = " + x + "," + y );
-                    break;
+                    break major;
                 }
                    
                           
                 }
+               }
        }  
 
     }
+       }
 }
 }
     
